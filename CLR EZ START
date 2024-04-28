@@ -1,0 +1,13 @@
+Свойства -> Компановщик -> Система -> Подсистема -> первый пункт выбрать виндоус
+Там же -> -Дополнительно -> main написать.
+Далее в MyForm CPP
+#include "MyForm.h"
+using namespace System;
+using namespace System::Windows::Forms;
+[STAThread]
+void main(array<String^>^ args) {
+	Application::EnableVisualStyles();
+	Application::SetCompatibleTextRenderingDefault(false);
+	Project5::MyForm form; //здесь название проекта вместо проджект 5
+	Application::Run(% form);
+}
